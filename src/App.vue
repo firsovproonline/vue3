@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <tree v-bind:treeData="treeData"></tree>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import tree from "./components/Tree/Tree.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    tree
+  },
+  data() {
+    return {
+      treeData:this.$store.getters.get_items
+    }
+  },
+  mounted() {
+    //console.log(this.$store.getters.get_items)
   }
 }
 </script>
