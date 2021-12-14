@@ -14,12 +14,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 
 import PageTree from './components/PageTree.vue';
+import PageArray from './components/PageArray.vue';
 
 
 
 Vue.config.productionTip = false
 const routes = [
-  { path: "*", component: PageTree }
+  { path: "*", component: PageTree },
+  { path: "/array", component: PageArray }
 ];
 
 const router = new VueRouter({

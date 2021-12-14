@@ -2,6 +2,7 @@
   <div id="app">
     <b-navbar toggleable="sm" type="dark" variant="info">
       <router-link to="/">Вывод дерева</router-link>
+      <router-link to="/array">Array</router-link>
 
     </b-navbar>
     <router-view></router-view>
@@ -41,4 +42,17 @@ body {
 html {
   background-image: url('assets/bgkl1.jpg');
 }
+
+nav a{
+  margin-right: 8px;
+  color: antiquewhite;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: burlywood;
+  text-decoration: none;
+}
+
 </style>
